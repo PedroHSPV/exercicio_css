@@ -11,7 +11,7 @@
 
     header {
       background-color: #333;
-      color: #fff;
+      color: #ffffff;
       padding: 10px;
       text-align: center;
     }
@@ -19,14 +19,39 @@
     section {
       padding: 20px;
       margin: 20px;
+      text-align: center; 
+    }
+
+    .entretenimento, .tecnologia {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
     }
 
     .entretenimento {
-      background-color: #4561dd; 
+      background-color: #98a7ec; 
     }
 
     .tecnologia {
       background-color: #003163; 
+    }
+
+    img {
+      width: 300px; 
+      height: auto; 
+      margin-bottom: 10px;
+    }
+
+    .subtitulo{
+      background-color: gray;
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+    }
+
+
+    p{
+      color:white;
     }
   </style>
 </head>
@@ -37,18 +62,25 @@
   </header>
 
   <section>
-    <h2>Últimas Notícias</h2>
+    <h2 class="subtitulo">Últimas Notícias</h2>
     <p>Notícias recentes</p>
   </section>
 
   <section class="entretenimento">
     <h2>Entretenimento</h2>
-    <p>Notícias sobre esportes, filmes, música </p>
+    <article>
+    <img src="/imagens/Seleção.jpg" alt="Seleção vence Inglaterra">
+    <p>Brasil vence Inglaterra por 1x0 na estreia de Dorival Júnior
+      Endrick, de 17 anos, marca o primeiro gol dele pela seleção</p>
+    </article>
   </section>
 
   <section class="tecnologia">
     <h2>Tecnologia</h2>
-    <p>Notícias sobre inovações e tecnologia</p>
+    <article>
+    <img src="/imagens/elon.jpg" alt="Elon Musk desafia autoridades brasileiras e ameaça retirar equipe do X/Twitter do país">
+    <p>O bilionário Elon Musk e parte das autoridades brasileiras, destacando um embate recente entre Musk e o ministro Alexandre de Moraes, do Supremo Tribunal Federal (STF), ocorrido na madrugada desta terça-feira (9). De acordo com informações divulgadas pelo Conexão Política, Musk teria chamado Moraes de 'ditador brutal', o acusando de interferir nas eleições presidenciais de 2022 e insinuando que o ministro tem influência sobre o ex-presidente Lula. Esse episódio reflete a tensão e o desentendimento entre o empresário e parte das autoridades brasileiras, evidenciando divergências políticas e posicionamentos públicos controversos</p>
+    </article>
   </section>
 
 </body>
